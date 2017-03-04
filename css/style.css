@@ -1,0 +1,159 @@
+*{box-sizing:border-box;}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+body {
+  background-color: #fafafa;
+  color: #484848;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+  padding:1em 1em 1em 1em;
+}
+
+.nav {
+	height: 60px;
+	padding: 0 0 0 0;
+	text-align: center;
+}
+/*navigation menu*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fafafa;
+  margin:0 0 0 15px;
+  align-content: center;
+}
+
+ul.topnav li {
+	float:left;
+  background-color: #ffffff;
+  border:1px solid #eeeeee;
+  border-radius: 10px;
+  width: 18%;
+  margin:0 1% 0 1%;
+}
+ul.topnav li:first-child {
+  margin-left: 0.5% !important;
+}
+ul.topnav li:last-child-child {
+  margin-right: 0.5% !important;
+}
+
+ul.topnav li a {
+  display: inline-block;
+	color: #484848;
+	width: 100%;
+  font-size: 1em;
+	line-height: 3.75em;
+	text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #eeeeee;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+/*end navigation menu*/
+
+.content-1 {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+  margin:0.25em auto;
+  padding: 0.125em 0.5em 0.125em 0.5em;
+}
+
+.footer {
+  padding:1em 1em 1em 1em;
+}
+
+ul.social-icon {
+  float:right;
+}
+ ul.social-icon li {
+  display: inline-block;
+  background-color: #484848;
+  color:#fafafa;
+  font-size: 10px;
+  text-align: center;
+  width:35px;
+  height:35px;
+  padding:3px 3px 3px 3px;
+  border:1px solid #fafafa;
+  border-radius: 5px;
+}
+
+/*CSS grid provided by: http://www.responsivegridsystem.com/calculator/*/
+.row:: {
+content:"";
+clear:both;
+display:block
+}
+
+[class*="col-"] {
+width:100%;
+float:left;
+padding:1em;
+}
+
+@media only screen and (min-width: 768px) {
+
+/*column sizes*/
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:86.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+
+}
+
+@media screen and (max-width:680px) {
+
+
+  ul.topnav li:last-child {
+    border: 1px solid #eeeeee !important;
+  }
+
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    border: none !important;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+    text-decoration:none !important;
+  }
+
+  ul.social-icon {
+    float:left !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
